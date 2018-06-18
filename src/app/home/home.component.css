@@ -1,0 +1,35 @@
+#gear
+{
+background-image: url('../../images/night.jpg');
+height: 1000px;
+
+}
+#open{
+    letter-spacing: 10px;
+   font-size: 37px;
+    color: rgb(155, 155, 88);
+}
+span:before{
+    content: 'WE KNOW WHAT YOU LOVE';
+    animation: animate infinite 14s;
+}
+@keyframes animate{
+    0%{
+        content: 'WE KNOW WHAT YOU WANT';
+    }
+    25%{
+        content: 'WE KNOW WHAT YOU NEED';
+    }
+    
+    50%{
+        content: 'STAY WITH FRIENDS AND FAMILY';
+    }
+    
+    75%{
+        content: 'COME ENJOY PRECIOUS MOMENTS WITH US';
+    }
+    100%{
+        content: 'COME HAVE THE BEST MOMENTS OF YOUR LIFE WITH US';
+    }
+    
+}

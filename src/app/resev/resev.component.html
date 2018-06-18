@@ -1,0 +1,121 @@
+<div id="gear">
+        <div id="try">
+         <div class="w3-container w3-black" style="text-align: center">
+                <h2><i class="	fa fa-bed w3-margin-right"></i>Reservation Details</h2>
+              </div>
+              <div class="w3-container w3-white w3-padding-16">
+                <form action="/action_page.php" target="_blank">
+                  <div class="w3-row-padding" style="margin:0 -16px;">
+                    <div class="w3-half w3-margin-bottom">
+                            <div id="try3">
+                                
+                      <label><i class="fa fa-calendar-o"> </i> Check In</label>
+                      <input #indate class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="CheckIn" required>
+                      <label><i class="fa fa-calendar-o"> </i> Check Out</label>
+                      <input #outdate class="w3-input w3-border" type="date" placeholder="DD MM YYYY" name="CheckIn" required>
+                      <label><i class="	fa fa-male"> </i> Adults</label>
+                      <input #adults class="w3-input w3-border" type="number" placeholder="Number Of Adults" name="CheckIn" required>
+                      <label><i class="	fa fa-child"> </i> Kids</label>
+                      <input #kids class="w3-input w3-border" type="number" placeholder="Number Of Kids" name="CheckIn" required>
+                      <label><i class="fa fa-cutlery"> </i> Meal Plan</label>
+                      <br>
+                      <select #meal  class="w3-input w3-border">
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Half Board">Half Board</option>
+                            <option value="Full Board">Full Board</option>
+                          </select>
+                      <label><i class="	fa fa-home"></i> Number Of Rooms</label>
+                      <input class="w3-input w3-border" type="number" placeholder="Number Of Rooms" name="CheckIn" required>
+                    </div>
+                    </div>
+             </div>
+             <h5>Total Price for The Rooms is <b>R{{title}}</b></h5>
+                </form>
+             
+            </div>
+            </div>
+            <div id="try2">
+              
+                    <div class="w3-container w3-black" style="text-align: center">
+                            <h2><i class="	fa fa-user-circle-o w3-margin-right"></i>Personal Details</h2>
+                          </div>
+                          <div class="w3-container w3-white w3-padding-16">
+                            <form action="/action_page.php" target="_blank">
+                              <div class="w3-row-padding" style="margin:0 -16px;">
+                                <div class="w3-half w3-margin-bottom">
+                                        <div id="try3">
+                                  <label><i class="	fa fa-user-o"> </i> Name</label>
+                                  <input #name class="w3-input w3-border" type="text" placeholder="Name" name="CheckIn" required>
+                                  <label><i class="fa fa-user-circle-o"> </i> Surname</label>
+                                  <input #surname class="w3-input w3-border" type="text" placeholder="Surname" name="CheckIn" required>
+                                  <label><i class="	fa fa-address-card"> </i> ID No</label>
+                                  <input #idno class="w3-input w3-border" type="text" placeholder="ID No" name="CheckIn" required>
+                                  <label><i class="	fa fa-address-book-o"> </i> Address</label>
+                                  <input #address class="w3-input w3-border" type="text" placeholder="Address" name="CheckIn" required>
+                                  <label><i class="fa fa-envelope"></i> Email</label>
+                                  <input #email class="w3-input w3-border" type="text" placeholder="Email" name="CheckIn" required>
+                                  <label><i class="		fa fa-tablet"></i> Cell no</label>
+                                  <input #cell class="w3-input w3-border" type="text" placeholder="Cell no" name="CheckIn" required>
+                                 
+                                
+                                </div>
+                                </div>
+                         </div>
+                         <br>
+                         <br>
+                            </form>
+                         
+                        </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>            
+            <br>
+            <br>
+            <br>
+            <br>
+            
+<div class="w3-container">
+  
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black" a routerLink = '/resev' (click) = "dis(name.value,surname.value,idno.value,address.value,email.value,cell.value,indate.value,outdate.value,adults.value,kids.value,meal.value)">Confirm Booking</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" routerLink = '/' class="w3-button w3-display-topright">Close</span>
+        <h2 style="text-align: center">Your booking has been placed</h2>
+        <br>
+        <p><b>Name</b>: {{name.value}}</p>
+        <p><b>Surname</b>: {{surname.value}}</p>
+        <p><b>ID</b>: {{idno.value}}</p>
+        <p><b>Check In Date</b>: {{indate.value}}</p>
+        <p><b>Check Out Date</b>: {{outdate.value}}</p>
+        <p><b>Meal Type</b>: {{meal.value}}</p>
+        <p><b>Room Details</b>: {{me}} </p>
+        <p><b>Total Price</b>: R{{title}}</p>
+      </div>
+    </div>
+  </div>
+</div>   
+ </div>
+        
+        

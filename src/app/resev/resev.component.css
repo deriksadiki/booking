@@ -1,0 +1,34 @@
+#gear
+{
+background-image: url('../../images/night3.jpeg');
+height: 1000px;
+}
+#try{
+   height: 55%; 
+   width: 45%;
+   float: right;
+   padding-right: 15%;
+}
+button{
+    width: 160px;
+
+}
+#try2{
+    height: 55%; 
+    width: 45%;
+    float: left;
+    padding-left: 15%;
+ }
+ #try3{
+    width: 206%;
+ }
+ select{
+    height: 55%; 
+    width: 100%;
+ }
+ .w3-modal-content{
+    background: linear-gradient(to top, #dbd9d7, #ffffff);
+    width: 50%;
+    height: 55%;
+   
+ }
